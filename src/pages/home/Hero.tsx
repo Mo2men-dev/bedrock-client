@@ -71,7 +71,7 @@ function CircleItem({
 					delay: 1 * indx * (2 / (heroHeadersArray.length - 1)),
 				},
 			}}
-			className="absolute font-bold h-10 z-30 flex justify-center max-sm:hidden"
+			className="absolute font-bold z-30 flex justify-center max-md:hidden"
 			style={{ transform }}>
 			<motion.span
 				animate={{
