@@ -60,12 +60,12 @@ function GlowingCard({
 
 function Index() {
 	return (
-		<main className="relative w-full flex flex-col px-32 bg-[#111] font-(family-name:--home-font) overflow-x-hidden">
+		<main className="relative w-full flex flex-col px-32 bg-[#111] font-(family-name:--home-font) overflow-x-hidden max-sm:p-8">
 			<Hero />
 			<Pillars />
 			<section className="text-white">
-				<h1 className="w-full text-center text-4xl font-bold my-18">Features</h1>
-				<div className="flex flex-wrap gap-4 [&_h2]:text-xl [&_h2]:font-semibold [&_p]:text-[#aaa] [&_div]:flex-1 [&_div]:gap-4">
+				<h1 className="w-full text-center text-4xl font-bold mb-18">Features</h1>
+				<div className="flex flex-wrap gap-4 [&_h2]:text-xl [&_h2]:font-semibold [&_p]:text-[#aaa] [&_div]:flex-1 [&_div]:gap-4 max-lg:flex-col max-md:[&_div]:w-full">
 					<GlowingCard className={"p-4 bg-[#222] flex flex-col"} glowColor="yellow">
 						<h2>Intuitive Document Editing</h2>
 						<p>

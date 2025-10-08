@@ -71,7 +71,7 @@ function CircleItem({
 					delay: 1 * indx * (2 / (heroHeadersArray.length - 1)),
 				},
 			}}
-			className="absolute font-bold h-10 z-30 flex justify-center"
+			className="absolute font-bold h-10 z-30 flex justify-center max-sm:hidden"
 			style={{ transform }}>
 			<motion.span
 				animate={{
@@ -96,7 +96,7 @@ function Hero() {
 	return (
 		<section
 			id="hero"
-			className="relative z-10 w-full h-screen flex flex-col font-(family-name:--hero-font) items-center gap-2 ">
+			className="relative z-10 w-full h-screen flex flex-col font-(family-name:--hero-font) items-center gap-2 overflow-hidden">
 			<motion.div
 				initial={{ translateY: 20 }}
 				animate={{ translateY: 0, transition: { duration: 1 } }}
@@ -136,7 +136,7 @@ function Hero() {
 						backgroundPosition: "center",
 						backgroundSize: "contain",
 					}}
-					className="absolute w-full h-full top-1/4 left-0"></div>{" "}
+					className="absolute w-full h-full top-1/4 left-0 max-md:hidden"></div>{" "}
 				{heroHeadersArray.map((item, indx) => {
 					return <CircleItem key={indx} indx={indx} item={item} setHeroHeader={setHeroHeader} />;
 				})}
