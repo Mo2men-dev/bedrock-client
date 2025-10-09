@@ -1,0 +1,25 @@
+import { useMotionValueEvent, useScroll } from "motion/react";
+import { useState } from "react";
+
+function NavBar() {
+	const { scrollY } = useScroll();
+	const [scrolled, setScrolled] = useState(false);
+
+	useMotionValueEvent(scrollY, "change", (latest) => {
+		setScrolled(latest > 0);
+	});
+	return (
+		<nav className="fixed left-0 w-full z-40 p-2 flex items-center justify-center text-white font-(family-name:--hero-font)">
+			<div
+				className={`relative w-1/3 h-full py-2 px-4 rounded-2xl flex items-center transition-all ${scrolled ? "backdrop-blur-lg" : ""} [&>*]:flex-1`}>
+				<ul className="flex gap-2 text-white">
+					<li>Home</li>
+				</ul>
+				<h1 className="text-2xl text-center font-bold text-amber-200">Bedrock</h1>
+				<span className="text-end">Account</span>
+			</div>
+		</nav>
+	);
+}
+
+export default NavBar;
