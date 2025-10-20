@@ -11,7 +11,7 @@ function NavBar() {
 	return (
 		<nav className="fixed left-0 w-full z-40 p-2 flex items-center justify-center text-white font-(family-name:--hero-font)">
 			<div
-				className={`relative w-1/4 h-full py-2 px-4 rounded-2xl flex items-center transition-all ${scrolled ? "backdrop-blur-lg" : ""} [&>*]:flex-1`}>
+				className={`relative w-1/4 h-full py-2 px-4 rounded-2xl flex items-center transition-all ${scrolled ? "backdrop-blur-lg" : ""} [&>*]:flex-1 max-sm:w-full max-lg:w-1/2`}>
 				<ul className="flex gap-2 text-white">
 					<li>Home</li>
 				</ul>

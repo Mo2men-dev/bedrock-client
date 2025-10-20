@@ -22,8 +22,8 @@ function UseCases() {
 	}, []);
 	return (
 		<section className="h-screen flex">
-			<div className="flex flex-col flex-1 justify-center text-purple-300">
-				<h1 className="font-bold text-8xl">Organize</h1>
+			<div className="flex flex-col flex-1 justify-center text-purple-300 max-sm:items-center max-sm:gap-4">
+				<h1 className="font-bold text-8xl max-md:text-6xl">Organize</h1>
 				<h3 className="font-bold text-xl italic">Your</h3>
 				<motion.div className="flex flex-col perspective-midrange perspective-origin-left text-4xl font-bold">
 					<AnimatePresence mode="wait">
@@ -72,7 +72,7 @@ function UseCases() {
 					</AnimatePresence>
 				</motion.div>
 			</div>
-			<div className="flex-1 flex justify-center items-center relative">
+			<div className="flex-1 flex justify-center items-center relative max-sm:hidden">
 				<AnimatePresence mode="wait">
 					<motion.img
 						key={heroHeadersArray[heroHeaderIndx][1]}
@@ -87,7 +87,7 @@ function UseCases() {
 							opacity: 0,
 							transition: { duration: 0.5, ease: "anticipate" },
 						}}
-						className="w-1/3"
+						className="w-1/3 max-lg:w-1/2"
 						src={heroHeadersArray[(heroHeaderIndx + 1) % heroHeadersArray.length][1]}
 						alt=""
 					/>
