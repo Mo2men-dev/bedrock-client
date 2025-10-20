@@ -11,11 +11,11 @@ function NavBar() {
 	return (
 		<nav className="fixed left-0 w-full z-40 p-2 flex items-center justify-center text-white font-(family-name:--hero-font)">
 			<div
-				className={`relative w-1/3 h-full py-2 px-4 rounded-2xl flex items-center transition-all ${scrolled ? "backdrop-blur-lg" : ""} [&>*]:flex-1`}>
+				className={`relative w-1/4 h-full py-2 px-4 rounded-2xl flex items-center transition-all ${scrolled ? "backdrop-blur-lg" : ""} [&>*]:flex-1`}>
 				<ul className="flex gap-2 text-white">
 					<li>Home</li>
 				</ul>
-				<h1 className="text-2xl text-center font-bold text-amber-200">Bedrock</h1>
+				<h1 className="text-2xl text-center font-bold text-amber-200">B.</h1>
 				<span className="text-end">Account</span>
 			</div>
 		</nav>
