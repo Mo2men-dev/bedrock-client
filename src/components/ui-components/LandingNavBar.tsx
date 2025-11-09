@@ -10,14 +10,14 @@ function NavBar() {
 		setScrolled(latest > 0);
 	});
 	return (
-		<nav className="fixed left-0 w-full z-40 p-2 flex items-center justify-center text-white font-(family-name:--hero-font)">
+		<nav className="fixed left-0 w-full z-40 p-2 flex items-center justify-center font-(family-name:--hero-font)">
 			<div
 				className={`relative w-1/4 h-full py-2 px-4 rounded-2xl flex items-center transition-all ${scrolled ? "backdrop-blur-lg" : ""} [&>*]:flex-1 max-sm:w-full max-lg:w-1/2`}>
-				<ul className="flex gap-2 text-white">
+				<ul className="flex gap-2">
 					<li>Preview</li>
 				</ul>
 				<Link to="/">
-					<h1 className="text-2xl text-center font-bold text-amber-200">B.</h1>
+					<h1 className="text-2xl text-center font-bold text-dark-tertiary">B.</h1>
 				</Link>
 				<Link className="text-end" to="/login">
 					Account

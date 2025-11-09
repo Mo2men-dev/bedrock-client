@@ -7,10 +7,10 @@ export const Route = createRootRoute({
 
 function RootLayout() {
 	return (
-		<>
+		<div className="bg-dark-bg text-dark-primary font-(family-name:--home-font)">
 			<Outlet />
 			<TanStackRouterDevtools />
-		</>
+		</div>
 	);
 }
 

@@ -22,16 +22,17 @@ const pillars = [
 function Pillars() {
 	return (
 		<section className="relative py-12 flex flex-col">
-			<h1 className="w-full text-center text-4xl font-bold mb-18 text-white">
+			<h1 className="w-full text-center text-4xl font-bold mb-18">
 				Why{" "}
-				<span className="text-yellow-200 underline font-(family-name:--hero-font)">Bedrock</span>?
+				<span className="text-dark-tertiary underline font-(family-name:--hero-font)">Bedrock</span>
+				?
 			</h1>
 			<div className="flex flex-col w-full">
 				{pillars.map((pillar, indx) => {
 					const delay = indx * 0.5;
 					return (
 						<div key={indx}>
-							<div className="hover:bg-[#222] p-4 transition-all rounded-md cursor-default">
+							<div className="hover:bg-bg-secondary p-4 transition-all rounded-md cursor-default">
 								<TitleAndText
 									header={pillar.header}
 									text={pillar.text}

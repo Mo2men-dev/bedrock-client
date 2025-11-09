@@ -74,14 +74,14 @@ function GlowingCard({
 
 function Features() {
 	return (
-		<section className="text-white">
+		<section>
 			<h1 className="w-full text-center text-4xl font-bold mb-18">Features</h1>
-			<div className="flex flex-wrap gap-4 [&_h2]:text-xl [&_h2]:font-semibold [&_p]:text-[#aaa] [&_div]:flex-1 [&_div]:gap-4 max-lg:flex-col max-md:[&_div]:w-full">
+			<div className="flex flex-wrap gap-4 [&_h2]:text-xl [&_h2]:font-semibold [&_p]:text-dark-secondary [&_div]:flex-1 [&_div]:gap-4 max-lg:flex-col max-md:[&_div]:w-full">
 				{features.map((feature, indx) => {
 					return (
 						<GlowingCard
 							key={indx}
-							className={"p-4 bg-[#222] flex flex-col"}
+							className={"p-4 bg-dark-bg-secondary flex flex-col"}
 							glowColor={feature.color}>
 							<TitleAndText header={feature.title} text={feature.description} />
 						</GlowingCard>

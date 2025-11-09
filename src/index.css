@@ -5,6 +5,12 @@
 @theme base {
 	--home-font: "Funnel Display", serif;
 	--hero-font: "Space Mono", monospace;
+
+	--color-dark-bg: #111;
+	--color-dark-bg-secondary: #222;
+	--color-dark-primary: #eee;
+	--color-dark-secondary: #aaa;
+	--color-dark-tertiary: var(--color-yellow-200);
 }
 
 html,

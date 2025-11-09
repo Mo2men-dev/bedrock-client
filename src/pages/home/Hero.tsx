@@ -31,7 +31,7 @@ export function ChaosBall() {
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 			}}
-			className="relative font-semibold h-1/2 select-none aspect-square rounded-full bg-yellow-200 text-shadow-black text-shadow-md flex flex-col items-center justify-center max-md:h-4/6"></motion.div>
+			className="relative font-semibold h-1/2 select-none aspect-square rounded-full bg-dark-tertiary text-shadow-black text-shadow-md flex flex-col items-center justify-center max-md:h-4/6"></motion.div>
 	);
 }
 
@@ -51,7 +51,7 @@ function Hero() {
 					{["Organize", "Your", "Chaos"].map((word, i) => (
 						<motion.span
 							key={word}
-							className="whitespace-nowrap text-xl text-yellow-200"
+							className="whitespace-nowrap text-xl text-dark-tertiary"
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
 							transition={{ delay: 1 + i * 0.5 }}>
