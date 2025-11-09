@@ -11,6 +11,7 @@
 	--color-dark-primary: #eee;
 	--color-dark-secondary: #aaa;
 	--color-dark-tertiary: var(--color-yellow-200);
+	--color-dark-border: #333;
 }
 
 html,

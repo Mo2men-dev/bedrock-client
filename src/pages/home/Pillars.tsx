@@ -32,7 +32,7 @@ function Pillars() {
 					const delay = indx * 0.5;
 					return (
 						<div key={indx}>
-							<div className="hover:bg-bg-secondary p-4 transition-all rounded-md cursor-default">
+							<div className="hover:bg-dark-bg-secondary p-4 transition-all rounded-md cursor-default">
 								<TitleAndText
 									header={pillar.header}
 									text={pillar.text}

@@ -17,7 +17,7 @@ function NavBar() {
 					<li>Preview</li>
 				</ul>
 				<Link to="/">
-					<h1 className="text-2xl text-center font-bold text-dark-tertiary">B.</h1>
+					<img src="/logo.png" alt="Bedrock Logo" className="w-1/4 m-auto" />
 				</Link>
 				<Link className="text-end" to="/login">
 					Account

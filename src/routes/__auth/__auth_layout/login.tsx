@@ -1,24 +1,43 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
+import AuthForm from "../../../components/ui-components/AuthForm";
 
 export const Route = createFileRoute("/__auth/__auth_layout/login")({
 	component: RouteComponent,
 });
 
 function RouteComponent() {
+	const handleLogin = (formValues: Record<string, string>) => {
+		console.log("Login form submitted");
+		console.log("Form Values:", formValues);
+	};
+
 	return (
-		<main className="h-screen">
-			<h1>Sign in to Bedrock</h1>
-			<form className="flex flex-col gap-4">
-				<label>
-					Email:
-					<input type="email" name="email" />
-				</label>
-				<label>
-					Password:
-					<input type="password" name="password" />
-				</label>
-				<button type="submit">Login</button>
-			</form>
-		</main>
-	)
+		<>
+			<AuthForm
+				title="Sign in to Bedrock"
+				fields={[
+					{
+						label: "Email",
+						name: "email",
+						type: "email",
+						placeholder: "Enter your email",
+					},
+					{
+						label: "Password",
+						name: "password",
+						type: "password",
+						placeholder: "Enter your password",
+					},
+				]}
+				onSubmit={handleLogin}
+				submitLabel="Login"
+			/>
+			<span>
+				New here?{" "}
+				<Link className="text-dark-tertiary" to="/register">
+					Create an account
+				</Link>
+			</span>
+		</>
+	);
 }
