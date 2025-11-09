@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 
@@ -13,10 +14,14 @@ function NavBar() {
 			<div
 				className={`relative w-1/4 h-full py-2 px-4 rounded-2xl flex items-center transition-all ${scrolled ? "backdrop-blur-lg" : ""} [&>*]:flex-1 max-sm:w-full max-lg:w-1/2`}>
 				<ul className="flex gap-2 text-white">
-					<li>Home</li>
+					<li>Preview</li>
 				</ul>
-				<h1 className="text-2xl text-center font-bold text-amber-200">B.</h1>
-				<span className="text-end">Account</span>
+				<Link to="/">
+					<h1 className="text-2xl text-center font-bold text-amber-200">B.</h1>
+				</Link>
+				<Link className="text-end" to="/login">
+					Account
+				</Link>
 			</div>
 		</nav>
 	);
