@@ -17,8 +17,10 @@
 		"@tanstack/react-router-devtools": "^1.132.47",
 		"@types/three": "^0.180.0",
 		"motion": "^12.23.22",
+		"noqta": "^1.6.0",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"react-icons": "^5.5.0"
 	},
 	"devDependencies": {
 		"@tanstack/router-plugin": "^1.132.47",
