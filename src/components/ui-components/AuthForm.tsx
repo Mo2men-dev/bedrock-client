@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TextInput from "./InputText";
 import { Link } from "@tanstack/react-router";
+import Button from "./Button";
 
 function AuthForm({
 	title,
@@ -53,9 +54,7 @@ function AuthForm({
 						onChange={handleChange}
 					/>
 				))}
-				<button className="bg-dark-tertiary w-fit m-auto p-2 text-black" type="submit">
-					{submitLabel}
-				</button>
+				<Button type="submit">{submitLabel}</Button>
 			</form>
 		</div>
 	);
