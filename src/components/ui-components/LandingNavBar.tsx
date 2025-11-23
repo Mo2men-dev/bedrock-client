@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 
-function NavBar() {
+function LandingNavBar() {
 	const { scrollY } = useScroll();
 	const [scrolled, setScrolled] = useState(false);
 
@@ -13,9 +13,9 @@ function NavBar() {
 		<nav className="fixed left-0 w-full z-40 p-2 flex items-center justify-center font-(family-name:--hero-font)">
 			<div
 				className={`relative w-1/4 h-full py-2 px-4 rounded-2xl flex items-center transition-all ${scrolled ? "backdrop-blur-lg" : ""} [&>*]:flex-1 max-sm:w-full max-lg:w-1/2`}>
-				<ul className="flex gap-2">
-					<li>Preview</li>
-				</ul>
+				<Link className="text-start" to="/preview">
+					Preview
+				</Link>
 				<Link to="/">
 					<img src="/logo.png" alt="Bedrock Logo" className="w-1/4 m-auto" />
 				</Link>
@@ -27,4 +27,4 @@ function NavBar() {
 	);
 }
 
-export default NavBar;
+export default LandingNavBar;
